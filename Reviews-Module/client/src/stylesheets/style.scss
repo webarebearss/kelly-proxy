@@ -1,0 +1,174 @@
+$primary-color: rgb(75, 75, 75);
+
+@function black($opacity) {
+  @return rgba(black, $opacity);
+}
+
+.stars {
+  color: rgb(15, 114, 118);
+  font-size: 20px;
+}
+
+.blank-star {
+  color: #d8d8d8;
+  font-size: 20px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: $primary-color;
+}
+
+.ReviewCount {
+  font-weight: 700;
+}
+
+.form-control {
+  font-weight: 500;
+  color: grey;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  border-left: #e9ecef00;
+}
+
+.review-entry {
+  list-style-type: none;
+  color: black;
+}
+
+.username {
+  font-weight: 600;
+}
+
+.bottom-spacing {
+  margin: 5px 0 24px 0;
+  border-bottom: 1px solid rgba(24, 22, 22, 0.11);
+  padding-bottom: 24px;
+}
+
+.top-spacing {
+  margin-top: 25px;
+}
+
+.top-star-spacing {
+  margin-top: 10px;
+}
+
+.rounded-circle {
+  max-width: 60px;
+}
+
+.images {
+  max-width: 100px;
+}
+
+.description-spacing {
+  margin-bottom: 15px;
+}
+
+.dropdown .btn-light {
+  border-color: #2f2c2c33;
+  color: #212529;
+  background-color: #f8f9fa00;
+}
+
+.btn-toolbar {
+  justify-content: space-between;
+}
+
+.input-group-text {
+  background-color: #e9ecef00;
+}
+
+.input-group-prepend {
+  margin-right: -13px;
+}
+
+.form-group .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #ced4da;
+  border-left: none;
+}
+
+// description alignment
+.desciption-align {
+  text-align: left;
+}
+
+// design the read More / read Less button
+.read-btn {
+  border: 0;
+  color: rgb(15, 114, 118);
+}
+
+.read-btn:focus {
+  outline: 0;
+}
+
+// pagination numbers
+.pagination {
+  color: rgb(15, 114, 118);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.highlight {
+  z-index: 2;
+  color: #fff;
+  cursor: default;
+  background-color: rgb(15, 114, 118);
+  border-color: rgb(15, 114, 118);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.number-center {
+  text-align: center;
+  line-height: 2em;
+}
+
+.button {
+  // padding: 0 15px;
+  border: 10px solid transparent;
+}
+
+.arrow-page {
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(15, 114, 118);
+}
+
+.arr-height {
+  padding-top: 15px;
+}
+
+////////////////////
+// MOBILE SCREEN ///
+////////////////////
+
+@media only screen and (max-width: 1200px) {
+  .hide-first-last {
+    display: none;
+  }
+  #reviews {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 18px auto 40px auto;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .hide-page {
+    display: none;
+  }
+  .arrow-page {
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+}
