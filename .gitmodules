@@ -1,0 +1,3 @@
+[submodule "checkout_module"]
+ path = checkout_module
+ url = https://github.com/webarebearss/checkout_module
