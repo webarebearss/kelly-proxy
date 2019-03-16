@@ -1,6 +1,0 @@
-.DS_Store
-node_modules
-config.js
-artillery.yml
-newrelic.js
-newrelic_agent.log
